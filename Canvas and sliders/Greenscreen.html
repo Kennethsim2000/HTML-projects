@@ -1,0 +1,34 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js"></script>
+    <title>GreenScreen</title>
+</head>
+<body>
+<h1>using a canvas</h1>
+<canvas id="d1"> </canvas>
+<p>
+    <input type="button" value="make lime" onclick="dolime()">
+    <input type="button" value="make yellow" onclick="doyellow()">
+</p>
+
+<!--next example-->
+<canvas id="can" class="orangeback">
+</canvas>
+
+<p>
+<input type="button" value="Make Blue" onclick="doBlue()" >
+<input type="color" value="#FF0000" id="clr" onchange="doColor()" >
+</p>
+
+<!--next example-->
+<canvas id="can2" class="orangeback">
+</canvas>
+
+<p>
+<input type="color" value="#FF0000" id="clr2" onchange="doColor2()" >
+<input type="range" min="10" max="100" value="10" id="slr" oninput=doSquare()>
+</p>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+h1{
+    text-align:center;
+    color:blue;
+}
+body{
+    background-color:lightgreen;
+}
+
+
+.places{
+    border-style:dotted;
+    border-radius:32px;
+    width:200px;
+    padding-left:20px;
+    padding-top:0px;
+    padding-bottom:0px;
+    margin:10px;
+}
+.good{
+    color:green;
+}
+
+#bad{
+    color:red;
+}
+
+.table{
+    margin-bottom:20px;
+}
+
+.orangeback{
+    background-color:orange;
+    width:20%;
+}
+
+.purple{
+    background-color:purple;
+    width:20%;
+    margin-bottom:20px;
+}
+
+.blueback{
+    background-color:blue;
+    width:20%;
+}
+.button{
+    margin-bottom:20px;
+}
+
+#div1{
+    margin-top:20px;
+}

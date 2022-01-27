@@ -1,0 +1,68 @@
+body{
+    padding:0;
+    margin:0;
+    background:linear-gradient(to right,#00AAFF,#00ff6c);
+}/* linear gradient gradually changes the color*/
+
+.calculator-grid{
+    display:grid;
+    justify-content:center;
+    align-content:center;
+    min-height: 100vh;
+    grid-template-columns:repeat(4,100px);
+    grid-template-rows: minmax(120px,auto) repeat(5,100px);
+}
+
+/*grid-template columns and rows determine the columns and rows
+minmax takes in a minimum parameter and a maximum parameter. */
+
+.calculator-grid > button{
+    cursor:pointer;
+    font-size:2rem;
+    border:1px solid white;
+    outline:none;
+    background-color:rgba(255,255,255,.75);
+}
+
+.calculator-grid > button:hover{
+    background-color:rgba(255,255,255,.9);
+}
+
+.span-two{
+    grid-column: span 2;
+}
+/*This causes the column to span two columns */
+
+.output{
+    grid-column: 1/-1;
+    background-color:rgba(0,0,0,.75);
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-around;
+    flex-direction:column;
+    padding:10px;
+    word-wrap:break-word;
+    word-break: break-all;
+}
+/*the grid-column takes in two values, the first value specifies on which column to start displaying
+the item, the second value specifies which column line to stop displaying the item. 
+For display:flex, a flex container expands items to fill available free space or shrinks them to prevent
+overflow.
+align-items:flex-end causes the items to stick to the bottom
+justify-content property aligns the flexible container's items when the items do not use all the available
+space on the horizontal axis- justify-content:space around-items will have space before, between and after
+them.
+flex-direction:column displays the flexible items vertically, as a column
+word-wrap:break-word allows long words to be able to be broken and wrap onto the next line
+word-breal:break-all:To prevent overflow, word may be broken at any character
+*/
+
+.output .previous-operand{
+    color:rgba(255,255,255,.75);
+    font-size:1.5rem;
+}
+
+.output .current-operand{
+    color:white;
+    font-size: 2.5rem;
+}
